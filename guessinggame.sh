@@ -1,5 +1,6 @@
 function count_files{
-	echo $(ls -lh | egrep "^-" |wc -l)
+	num_files=$(ls -lh | egrep "^-" |wc -l)
+	echo $num_files
 }
   
 num_files=$(count_files)
